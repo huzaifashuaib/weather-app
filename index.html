@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.svg" type="image/png">
+</head>
+
+<body>
+    <header></header>
+    <main>
+       <div class="container">
+        <div class="row">
+            <div class="wrapper">
+                <div class="search">
+                    <input type="text" placeholder="Enter City Name" id="getTxt">
+                    <button onclick="checkWeatherObject()"><img src="images/search.png" alt=""></button>
+                </div>
+                <div class="weather-detail" id="weather-detail">
+                    <img src="images/clouds.png" id="weatherIcon" alt="">
+                    <h1 class="temp" id="temp">22 </h1>
+                    <h3 class="city" id="city">City Name</h3>
+
+                    <div class="air-condition">
+                        <div class="col">
+                            <img src="images/humidity.png" class="weather-icon" alt="">
+                             <div>
+                                <p id="humdity">53%</p>
+                                <p>Humidity</p>
+                             </div>
+                        </div>
+                        <div class="col">
+                            <img src="images/wind.png" class="weather-icon" alt="">
+                            <div>
+                                <p id="pressure">53 km/h</p>
+                                <p>Wind Speed</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+       </div>
+    </main>
+    <footer></footer>
+
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
